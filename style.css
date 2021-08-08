@@ -51,8 +51,37 @@ h2 span:nth-child(2):after {
 
 h2 i {
   position: absolute;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #777;
+  font-weight: 400;
+  font-style: initial;
+  line-height: 1em;
 }
 
 h2 i::before {
   content: 'Oxygen';
+  position: absolute;
+  text-align: center;
+  text-align: center;
+  width: 100%;
+  display: initial;
+  transition: 0.5s;
+}
+
+h2:hover i::before {
+  opacity: 0;
+  letter-spacing: 2em;
+}
+
+h2 i::after {
+  content: 'Breathe Again';
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+h2:hover i::after {
+  opacity: 1;
+  visibility: visible;
 }
